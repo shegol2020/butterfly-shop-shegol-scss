@@ -1,7 +1,15 @@
 // common files
 @import "common/_variables";
 @import "common/_fonts";
-@import "common/_typography";
+@import "common/_common";
+
 
 // blocks
+@import "blocks/_header";
+@import "blocks/_nav-menu";
 @import "blocks/_promo";
+@import "blocks/_btn";
+@import "blocks/_portfolio";
+@import "blocks/_order";
+@import "blocks/_footer";
+
