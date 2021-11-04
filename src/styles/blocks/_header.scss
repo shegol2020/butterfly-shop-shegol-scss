@@ -6,3 +6,11 @@
 .header a{
   color: inherit;
 }
+
+.header-inner{
+  @include container;
+}
+
+.header-wrap{
+  display: flex;
+}

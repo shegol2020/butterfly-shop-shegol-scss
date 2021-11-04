@@ -1,3 +1,7 @@
 .promo{
   background: linear-gradient(0deg, rgba(51, 51, 51, 0.4), rgba(51, 51, 51, 0.4)), url(/img/beard-man.jpg);
 }
+
+.promo-inner{
+  @include container;
+}

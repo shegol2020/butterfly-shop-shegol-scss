@@ -1,3 +1,22 @@
 .footer{
   background-color: $color-main;
 }
+
+.footer-inner{
+  @include container;
+}
+
+.footer-wrap{
+  display: flex;
+  justify-content:space-between;
+}
+
+.phone{
+  margin-left: auto;
+}
+
+.social-list{
+  display: flex;
+}
+
+

@@ -1,1 +1,7 @@
+.portfolio-inner{
+  @include container;
+}
 
+.portfolio-media-wrap{
+  display: flex;
+}

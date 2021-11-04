@@ -1,3 +1,9 @@
 .order{
   background-color: rgba($color-main, .1);
 }
+
+.order-inner{
+  @include container;
+}
+
+
