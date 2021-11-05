@@ -6,4 +6,15 @@
   @include container;
 }
 
+.order-title{
+  padding-top: $indent-gap;
+  @include title-h2;
+}
 
+.order-text{
+  font-size: 28px;
+  line-height: 38px;
+  text-align: center;
+  padding-bottom: 125px;
+  padding-top: 37px;
+}

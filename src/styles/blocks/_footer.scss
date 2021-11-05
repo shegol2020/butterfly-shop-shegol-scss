@@ -1,5 +1,6 @@
 .footer{
   background-color: $color-main;
+  color: #fff;
 }
 
 .footer-inner{
@@ -9,14 +10,46 @@
 .footer-wrap{
   display: flex;
   justify-content:space-between;
+  align-items: center;
+}
+
+.footer a{
+  color: inherit;
+  text-decoration: none;
 }
 
 .phone{
   margin-left: auto;
+  padding: 0 60px;
+  font-size: 28px;
+  line-height: 38px;
 }
 
 .social-list{
   display: flex;
+  list-style-type: none;
 }
 
+.social-item{
+  padding: 0 7px;
+}
 
+.social-icon {
+  display: block;
+  width: 26px;
+  height: 26px;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.social-icon-inst {
+  background-image: url(/img/Instagram.svg)
+}
+
+.social-icon-fb {
+  background-image: url(/img/facebook.svg)
+}
+
+.social-icon-telegram {
+  background-image: url(/img/telegram.svg)
+}

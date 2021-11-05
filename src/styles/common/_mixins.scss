@@ -2,3 +2,17 @@
   max-width: $width;
   margin: 0 auto;
 }
+
+@mixin title-h2 {
+  margin: 0;
+  font-weight: 300;
+  font-size: 64px;
+  line-height: 87px;
+  text-align: center;
+}
+
+@mixin button{
+  font-size: 42px;
+  line-height: 57px;
+  padding: 30px 48px;
+}

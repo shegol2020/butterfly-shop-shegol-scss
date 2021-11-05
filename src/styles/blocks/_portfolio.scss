@@ -2,6 +2,34 @@
   @include container;
 }
 
-.portfolio-media-wrap{
+.portfolio-wrap{
   display: flex;
+  flex-direction: column;
+  align-items: center;
 }
+
+.portfolio-title{
+  padding-top: $indent-gap;
+  padding-bottom: 97px;
+  @include title-h2;
+}
+
+.portfolio-media-wrap{
+  padding-bottom: 120px;
+  display: flex;
+  justify-content: space-around;
+  list-style-type: none;
+}
+
+.portfolio-item{
+  padding: 15px 68px;
+  font-size: 24px;
+  line-height: 33px;
+  text-decoration: none;
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+
+
+
