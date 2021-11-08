@@ -1,10 +1,25 @@
 .nav-menu{
   margin-left: auto;
 
+  @media (max-width: $df-mobile) {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    // display: none;
+    width: 100%;
+    background-color: $color-main;
+  }
+
+
   ul {
   display: flex;
   justify-content: space-around;
   list-style-type: none;
+
+    @media (max-width: $df-mobile) {
+      display: block;
+      text-align: center;
+    }
   }
 
   li{
@@ -19,9 +34,31 @@
     line-height: 24px;
     text-transform: uppercase;
     text-decoration: none;
+
+    @media (max-width: $df-mobile) {
+      padding: 13px 0;
+    }
   }
 
   a:hover{
     background-color: red;
   }
+}
+
+.burger {
+  display: none;
+
+  @media (max-width: $df-mobile) {
+    display: block;
+  }
+}
+
+.burger-icon{
+    display: block;
+    margin: 16px;
+    background-image: url(/img/burger.png);
+    width: 26px;
+    height: 26px;
+    background-repeat: no-repeat;
+    background-size: contain;
 }

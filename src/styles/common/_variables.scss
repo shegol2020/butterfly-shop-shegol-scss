@@ -7,3 +7,11 @@ $color-add: #FF2D2D;
 
 //indents
 $indent-gap: 130px;
+
+// breakpoints
+$mobile: 320px;
+$tablet: 768px;
+$desktop: 1280px;
+
+$df-tablet: $desktop - 1;
+$df-mobile: $tablet - 1;

@@ -18,5 +18,11 @@
 .header-wrap{
   display: flex;
   align-items: center;
+
+  @media (max-width: $df-mobile) {
+    justify-content: space-between;
+  }
 }
+
+
 

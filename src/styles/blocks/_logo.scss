@@ -3,6 +3,13 @@
   font-size: 42px;
   line-height: 57px;
   text-decoration: none;
+
+  @media (max-width: $df-mobile) {
+    padding: 16px;
+    font-size: 28px;
+    line-height: 38px;
+  }
+
 }
 
 .footer .logo{
