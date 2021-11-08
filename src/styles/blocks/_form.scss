@@ -1,5 +1,6 @@
 .form{
   display: flex;
+  flex-wrap: wrap;
   padding-bottom: 130px;
 
   .form-half{
@@ -22,3 +23,6 @@
     line-height: 34px;
    }
 }
+
+
+

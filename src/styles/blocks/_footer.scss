@@ -53,3 +53,16 @@
 .social-icon-telegram {
   background-image: url(/img/telegram.svg)
 }
+
+.arrow-fix-icon{
+  position: fixed;
+  display: block;
+  width: 46px;
+  height: 46px;
+  left: 16px;
+  bottom: 16px;
+  z-index: 100;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-image: url(/img/arrow-vert.svg);
+}
