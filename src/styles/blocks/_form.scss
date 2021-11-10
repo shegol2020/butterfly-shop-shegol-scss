@@ -3,6 +3,10 @@
   flex-wrap: wrap;
   padding-bottom: 130px;
 
+  @media (max-width: $df-mobile) {
+    display: block;
+  }
+
   .form-half{
     width: 33.33%;
   }
