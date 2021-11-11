@@ -1,13 +1,18 @@
 .form{
   display: flex;
+  align-items: flex-end;
   padding-bottom: 130px;
 
   @media (max-width: $df-mobile) {
     display: block;
+    padding-bottom: 90px;
   }
 
   .form-half{
     width: 100%;
+    @media (max-width: $df-mobile) {
+      margin-bottom: 30px;
+    }
   }
 
    label{
@@ -16,8 +21,6 @@
    }
 
    input{
-    // height: 104px;
-    // width: 100%;
     border: none;
     border-radius: 6px;
     margin-top: 8px;

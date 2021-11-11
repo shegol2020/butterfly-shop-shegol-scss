@@ -45,6 +45,18 @@
   }
 }
 
+.portfolio-media:first-child{
+  @media (max-width: $df-mobile) {
+    margin-top: 0;
+  }
+}
+
+.portfolio-media:last-child{
+  @media (max-width: $df-mobile) {
+    margin-bottom: 0;
+  }
+}
+
 .portfolio-item{
   position: absolute;
   left: 0;
