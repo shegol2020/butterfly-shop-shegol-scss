@@ -12,6 +12,12 @@
   padding-top: $indent-gap;
   padding-bottom: 97px;
   @include title-h2;
+
+  @media (max-width: $df-mobile) {
+    padding-top: $indent-gap-mob;
+    padding-bottom: 60px;
+    @include title-h2-mob;
+  }
 }
 
 .portfolio-media-wrap{
@@ -21,6 +27,7 @@
   list-style-type: none;
 
   @media (max-width: $df-mobile) {
+    padding-bottom: 0px;
     display: block;
   }
 }

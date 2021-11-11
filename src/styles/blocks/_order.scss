@@ -4,17 +4,30 @@
 
 .order-inner{
   @include container;
+  padding: 0 10px;
 }
 
 .order-title{
   padding-top: $indent-gap;
   @include title-h2;
+
+  @media (max-width: $df-mobile) {
+    padding-top: $indent-gap-mob;
+    @include title-h2-mob;
+  }
 }
 
 .order-text{
+  padding-top: 37px;
+  padding-bottom: 125px;
   font-size: 28px;
   line-height: 38px;
   text-align: center;
-  padding-bottom: 125px;
-  padding-top: 37px;
+
+  @media (max-width: $df-mobile) {
+    padding-top: 20px;
+    padding-bottom: 60px;
+    font-size: 18px;
+    line-height: 25px;
+  }
 }

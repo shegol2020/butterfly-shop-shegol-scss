@@ -1,6 +1,5 @@
 .form{
   display: flex;
-  flex-wrap: wrap;
   padding-bottom: 130px;
 
   @media (max-width: $df-mobile) {
@@ -8,7 +7,7 @@
   }
 
   .form-half{
-    width: 33.33%;
+    width: 100%;
   }
 
    label{
@@ -17,14 +16,19 @@
    }
 
    input{
-    height: 104px;
-    width: 412px;
+    // height: 104px;
+    // width: 100%;
     border: none;
     border-radius: 6px;
+    margin-top: 8px;
     margin-right: 20px;
     padding: 35px 30px;
     font-size: 28px;
     line-height: 34px;
+
+    @media (max-width: $df-mobile) {
+      width: 100%;
+    }
    }
 }
 

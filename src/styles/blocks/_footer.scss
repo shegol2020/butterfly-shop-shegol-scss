@@ -11,6 +11,10 @@
   display: flex;
   justify-content:space-between;
   align-items: center;
+
+  @media (max-width: $df-mobile) {
+    flex-direction: column;
+  }
 }
 
 .footer a{
@@ -23,11 +27,20 @@
   padding: 0 60px;
   font-size: 28px;
   line-height: 38px;
+
+  @media (max-width: $df-mobile) {
+    margin-left: 0;
+    padding-bottom: 15px;
+  }
 }
 
 .social-list{
   display: flex;
   list-style-type: none;
+
+  @media (max-width: $df-mobile) {
+    padding-bottom: 35px;
+  }
 }
 
 .social-item{

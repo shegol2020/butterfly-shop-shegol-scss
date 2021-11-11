@@ -9,9 +9,14 @@
     font-size: 28px;
     line-height: 38px;
   }
-
 }
 
 .footer .logo{
   padding: 31px 0;
+  @media (max-width: $df-mobile) {
+    padding: 16px;
+    font-size: 36px;
+    line-height: 49px;
+  }
+
 }
