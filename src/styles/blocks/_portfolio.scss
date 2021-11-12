@@ -35,6 +35,7 @@
 .portfolio-media{
   position: relative;
   margin-right: 15px;
+  overflow: hidden;
 
 @media (max-width: $df-mobile) {
   margin: 20px 0;
@@ -55,6 +56,18 @@
   @media (max-width: $df-mobile) {
     margin-bottom: 0;
   }
+}
+
+.portfolio-new:before{
+  position: absolute;
+  top: 25px;
+  left: -30px;
+  display: inline-block;
+  padding: 5px 60px;
+  color: #fff;
+  transform: rotate(-45deg);
+  content: 'new';
+  background-color: $color-add;
 }
 
 .portfolio-item{

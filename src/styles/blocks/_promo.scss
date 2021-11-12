@@ -21,6 +21,7 @@
 
 .promo-title{
   padding-top: 200px;
+  margin: 0;
   text-align: center;
   font-weight: 600;
   font-size: 72px;
@@ -28,7 +29,7 @@
   color: #fff;
 
   @media (max-width: $df-mobile) {
-    padding-top: 110px;
+    padding-top: 180px;
     font-size: 32px;
     line-height: 44px;
   }
