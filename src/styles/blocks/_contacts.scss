@@ -1,0 +1,54 @@
+.contacts{
+ padding-top: 220px;
+ padding-bottom: 130px;
+}
+
+.contacts-title{
+  @include title-h2;
+}
+
+.contacts-list{
+  display: flex;
+  justify-content: center;
+  margin-top: 77px;
+
+  list-style: none;
+
+}
+
+.contacts-list-link{
+  margin-right: 50px;
+  color: $color-main;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 24px;
+  text-transform: uppercase;
+
+  &.active{
+    color: $color-add;
+  }
+}
+
+.contact-info{
+   display: none;
+
+   &.active{
+    display: flex;
+  }
+}
+
+.contact-info-text{
+  padding-top: 40px;
+  padding-left: 8.33%;
+  width: 41.66%;
+  font-size: 24px;
+  line-height: 33px;
+}
+
+.contact-info-map{
+  width: 58.33%;
+}
+
+
+
