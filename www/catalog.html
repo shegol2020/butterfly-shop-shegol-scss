@@ -15,10 +15,10 @@
   <header class="header">
     <div class="header-inner">
       <div class="header-wrap">
-        <a href="#" class="logo">Butterfly</a>
+        <a href="/index.html" class="logo">Butterfly</a>
         <nav class="nav-menu">
           <ul>
-            <li><a href="/catalog.html">Каталог</a></li>
+            <li><a href="/catalog.html" class="active">Каталог</a></li>
             <li><a href="/reviews.html">Отзывы</a></li>
             <li><a href="/contacts.html">Контакты</a></li>
             <li><a href="/faq.html">FAQ</a></li>
@@ -29,52 +29,143 @@
     </div>
   </header>
   <main>
-    <section class="promo">
-      <div class="promo-inner">
-        <div class="promo-wrap">
-          <h1 class="promo-title">Индивидуальный пошив галсутков-бабочек</h1>
-          <button class="btn promo-btn">Заказать бабочку</button>
-        </div>
-      </div>
-    </section>
     <section class="portfolio">
       <div class="portfolio-inner">
-        <div class="portfolio-wrap">
-          <h2 class="portfolio-title">Наши работы</h2>
-          <ul class="portfolio-media-wrap">
-            <li class="portfolio-media portfolio-new">
-              <div class="photo-wrap">
-                <div class="photo-inner-wrap">
-                  <img src="/img/cat.png" alt="">
-                  <a href="#" class="portfolio-item-title">Бабочка такая</a>
-                </div>
+        <h1 class="portfolio-title">Портфолио</h1>
+        <ul class="filter">
+          <li class="filter-item">
+            <a href="#" class="filter-link active" data-type="all">Всe</a>
+          </li>
+          <li class="filter-item">
+            <a href="#" class="filter-link" data-type="serious">строгие</a>
+          </li>
+          <li class="filter-item">
+            <a href="#" class="filter-link" data-type="fun">веселые</a>
+          </li>
+          <li class="filter-item">
+            <a href="#" class="filter-link" data-type="cat">для животных</a>
+          </li>
+          <li class="filter-item">
+            <a href="#" class="filter-link" data-type="child">детские</a>
+          </li>
+          <li class="filter-item">
+            <a href="#" class="filter-link" data-type="adult">для взрослых</a>
+          </li>
+        </ul>
+        <div class="portfolio-list">
+          <div class="portfolio-item" data-type="serious">
+            <div class="portfolio-item-wrap">
+              <div class="portfolio-item-inner">
+                <a href="#" class="portfolio-item-bg" style="background-image: url(/img/portfolio-card1.jpg)">
+                  <p class="portfolio-item-text">Бабочка такая</p>
+                </a>
               </div>
-            </li>
-
-            <li class="portfolio-media">
-              <div class="portfolio-inner-wrap">
-                <img src="/img/cat.png" alt="">
-                <a href="#" class="portfolio-item-title">Бабочка такая</a>
+            </div>
+          </div>
+          <div class="portfolio-item" data-type="child">
+            <div class="portfolio-item-wrap">
+              <div class="portfolio-item-inner">
+                <a href="#" class="portfolio-item-bg" style="background-image: url(/img/portfolio-card2.jpg);">
+                  <p class="portfolio-item-text">Бабочка растакая</p>
+                </a>
               </div>
-            </li>
-            <li class="portfolio-media">
-              <div class="portfolio-inner-wrap">
-                <img src="/img/cat.png" alt="">
-                <a href="#" class="portfolio-item-title">Бабочка такая</a>
+            </div>
+          </div>
+          <div class="portfolio-item" data-type="fun">
+            <div class="portfolio-item-wrap">
+              <div class="portfolio-item-inner">
+                <a href="#" class="portfolio-item-bg" style="background-image: url(/img/portfolio-card3.jpg)">
+                  <p class="portfolio-item-text">Бабочка сякая</p>
+                </a>
               </div>
-            </li>
-            <li class="portfolio-media">
-              <div class="portfolio-inner-wrap">
-                <img src="/img/cat.png" alt="">
-                <a href="#" class="portfolio-item-title">Бабочка растакая</a>
+            </div>
+          </div>
+          <div class="portfolio-item" data-type="cat">
+            <div class="portfolio-item-wrap">
+              <div class="portfolio-item-inner">
+                <a href="#" class="portfolio-item-bg" style="background-image: url(/img/portfolio-card4.jpg)">
+                  <p class="portfolio-item-text">Кривая</p>
+                </a>
               </div>
-            </li>
-            </li>
-          </ul>
-          <button class="btn portfolio-btn">Все бабочки</button>
+            </div>
+          </div>
+          <div class="portfolio-item" data-type="serious">
+            <div class="portfolio-item-wrap">
+              <div class="portfolio-item-inner">
+                <a href="#" class="portfolio-item-bg" style="background-image: url(/img/portfolio-card5.jpg)">
+                  <p class="portfolio-item-text">Бабочка такая</p>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="portfolio-item" data-type="adult">
+            <div class="portfolio-item-wrap">
+              <div class="portfolio-item-inner">
+                <a href="#" class="portfolio-item-bg" style="background-image: url(/img/portfolio-card6.jpg);">
+                  <p class="portfolio-item-text">Бабочка растакая</p>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="portfolio-item" data-type="cat">
+            <div class="portfolio-item-wrap">
+              <div class="portfolio-item-inner">
+                <a href="#" class="portfolio-item-bg" style="background-image: url(/img/portfolio-card7.jpg)">
+                  <p class="portfolio-item-text">Бабочка сякая</p>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="portfolio-item" data-type="adult">
+            <div class="portfolio-item-wrap">
+              <div class="portfolio-item-inner">
+                <a href="#" class="portfolio-item-bg" style="background-image: url(/img/portfolio-card8.jpg)">
+                  <p class="portfolio-item-text">Кривая</p>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="portfolio-item" data-type="child">
+            <div class="portfolio-item-wrap">
+              <div class="portfolio-item-inner">
+                <a href="#" class="portfolio-item-bg" style="background-image: url(/img/portfolio-card9.jpg)">
+                  <p class="portfolio-item-text">Бабочка такая</p>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="portfolio-item" data-type="serious">
+            <div class="portfolio-item-wrap">
+              <div class="portfolio-item-inner">
+                <a href="#" class="portfolio-item-bg" style="background-image: url(/img/portfolio-card10.jpg);">
+                  <p class="portfolio-item-text">Бабочка растакая</p>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="portfolio-item" data-type="child">
+            <div class="portfolio-item-wrap">
+              <div class="portfolio-item-inner">
+                <a href="#" class="portfolio-item-bg" style="background-image: url(/img/portfolio-card11.jpg)">
+                  <p class="portfolio-item-text">Бабочка сякая</p>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="portfolio-item" data-type="fun">
+            <div class="portfolio-item-wrap">
+              <div class="portfolio-item-inner">
+                <a href="#" class="portfolio-item-bg" style="background-image: url(/img/portfolio-card12.jpg)">
+                  <p class="portfolio-item-text">Кривая</p>
+                </a>
+              </div>
+            </div>
+          </div>
         </div>
+        <a href="#" class="btn">Все бабочки</a>
       </div>
     </section>
+
     <section class="order">
       <div class="order-inner">
         <div class="order-wrap">

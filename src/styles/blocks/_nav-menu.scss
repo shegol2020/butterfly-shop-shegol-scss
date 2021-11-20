@@ -22,9 +22,6 @@
     }
   }
 
-  li{
-
-  }
 
   a{
     display: block;
@@ -34,14 +31,16 @@
     line-height: 24px;
     text-transform: uppercase;
     text-decoration: none;
+    transition: background-color .8s;
 
     @media (max-width: $df-mobile) {
       padding: 13px 0;
     }
-  }
 
-  a:hover{
+  &.active,
+  &:hover{
     background-color: red;
+    }
   }
 }
 

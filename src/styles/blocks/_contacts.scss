@@ -3,6 +3,10 @@
  padding-bottom: 130px;
 }
 
+.contacts-inner {
+  @include container;
+}
+
 .contacts-title{
   @include title-h2;
 }
@@ -24,8 +28,10 @@
   font-size: 22px;
   line-height: 24px;
   text-transform: uppercase;
+  transition: color .3s;
 
-  &.active{
+  &.active,
+  &:hover {
     color: $color-add;
   }
 }
