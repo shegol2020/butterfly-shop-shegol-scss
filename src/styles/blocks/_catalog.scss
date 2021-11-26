@@ -1,34 +1,34 @@
-.portfolio {
+.catalog-portfolio {
   padding: 130px 0;
   text-align: center;
 }
 
-.portfolio-inner {
+.catalog-portfolio-inner {
   @include container;
 }
 
-.portfolio-title {
+.catalog-portfolio-title {
   @include title-h2;
   margin-bottom: 77px;
 }
 
-.portfolio-list {
+.catalog-portfolio-list {
   display: flex;
   flex-wrap: wrap;
   margin-bottom: 120px;
   margin-top: 40px;
 }
 
-.portfolio-item {
+.catalog-portfolio-item {
   flex-basis: 25%;
 }
 
-.portfolio-item-wrap {
+.catalog-portfolio-item-wrap {
   position: relative;
   padding-top: 100%;
 }
 
-.portfolio-item-inner {
+.catalog-portfolio-item-inner {
   position: absolute;
   top: 0;
   left: 0;
@@ -36,7 +36,7 @@
   height: 100%;
 }
 
-.portfolio-item-bg {
+.catalog-portfolio-item-bg {
   width: 100%;
   height: 100%;
   display: inline-block;
@@ -46,7 +46,7 @@
   background-repeat: no-repeat;
 }
 
-.portfolio-item-text {
+.catalog-portfolio-item-text {
   position: absolute;
   bottom: 0;
   left: 0;
