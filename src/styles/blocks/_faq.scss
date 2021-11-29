@@ -44,7 +44,7 @@
   cursor: pointer;
 
   &.open {
-    .faq-button-icon:before {
+    .faq-collapse-icon:before {
       transform: scale(0);
     }
   }
@@ -96,3 +96,5 @@
     transform: rotate(90deg);
   }
 }
+
+

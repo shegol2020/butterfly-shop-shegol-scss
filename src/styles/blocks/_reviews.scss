@@ -12,20 +12,25 @@
 
 .review-list {
   display: flex;
-  flex-wrap: wrap;
+  // flex-wrap: wrap;
   margin-top: 100px;
   // margin-left: -;
   // margin-right: -);
 }
 
 .reviews-item {
-  flex-basis: 50%;
+  // flex-basis: 50%;
   // padding-left: $indent-half-gap;
   // padding-right: $indent-half-gap;
   margin-bottom: 70px;
 }
 
 .review {
+  display: flex;
+  align-items: center;
+}
+
+.review-wrap {
   display: flex;
   align-items: center;
 }
@@ -58,4 +63,26 @@
   margin: 40px 0 0 0;
   font-size: 24px;
   line-height: 33px;
+}
+
+.slick-arrow {
+  flex-shrink: 0;
+  width: 60px;
+  height: 60px;
+  margin: 70px 20px 50px;
+  font-size: 0;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.slick-prev{
+  background-image: url("/img/arrow-left.svg");
+}
+
+.slick-next{
+  background-image: url("/img/arrow-right.svg");
 }

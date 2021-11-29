@@ -1,11 +1,10 @@
-.portfolio-inner{
-  @include container;
+.portfolio {
+  padding: 130px 0;
+  text-align: center;
 }
 
-.portfolio-wrap{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+.portfolio-inner{
+  @include container;
 }
 
 .portfolio-title{
@@ -20,44 +19,48 @@
   }
 }
 
-.portfolio-media-wrap{
-  padding-bottom: 120px;
+.portfolio-wrap{
   display: flex;
-  justify-content: space-around;
-  list-style-type: none;
-
-  @media (max-width: $df-mobile) {
-    padding-bottom: 0px;
-    display: block;
-  }
 }
 
-.portfolio-media{
+.portfolio-item {
+  flex-basis: 25%;
+}
+
+.portfolio-item-wrap {
   position: relative;
-  margin-right: 15px;
-  overflow: hidden;
-  // padding-top: 100%;
-  // border: 1px solid #000;
-
-@media (max-width: $df-mobile) {
-  margin: 20px 0;
+  padding-top: 100%;
 }
 
-  // img{
-  //   object-fit: cover;
-  // }
+.portfolio-item-inner {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }
 
-.portfolio-media:first-child{
-  @media (max-width: $df-mobile) {
-    margin-top: 0;
-  }
+.products-item-bg {
+  width: 100%;
+  height: 100%;
+  display: inline-block;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
-.portfolio-media:last-child{
-  @media (max-width: $df-mobile) {
-    margin-bottom: 0;
-  }
+.portfolio-item-text{
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  padding: 15px 0;
+  text-align: center;
+  font-size: 24px;
+  line-height: 33px;
+  text-decoration: none;
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.4);
 }
 
 .portfolio-new:before{
@@ -72,36 +75,25 @@
   background-color: $color-add;
 }
 
-.portfolio-item-title{
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  padding: 15px 0;
-  text-align: center;
-  font-size: 24px;
-  line-height: 33px;
-  text-decoration: none;
-  color: #fff;
-  background-color: rgba(0, 0, 0, 0.4);
+.filter{
+  list-style: none;
+  display: flex;
+  justify-content: center;
 }
 
-// .photo-wrap {
-//   position: relative;
-//   padding-top: 100%;
-//   border: 1px solid #000;
-// }
+.filter-item{
+  margin-left: 50px;
+}
 
-// .photo-inner-wrap {
-//   position: absolute;
-//   top: 0;
-//   left: 0;
-//   width: 100%;
-//   height: 100%;
-// }
+.filter-link{
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 24px;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: inherit;
 
-// .photo-inner-wrap img {
-//   width: 100%;
-//   height: 100%;
-//   object-fit: cover;
-// }
+  &.active{
+    color: $color-add;
+  }
+}

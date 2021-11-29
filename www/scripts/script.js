@@ -66,7 +66,10 @@ $(document).ready(function () {
 
 
   //slider
-  $('.review-list').slick();
+  $('.review-list').slick({
+    // prevArrow: $('.arrow-left'),
+    // nextArrow: $('.arrow-right')
+  });
 
 
 });
