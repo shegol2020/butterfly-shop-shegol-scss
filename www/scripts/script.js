@@ -29,11 +29,11 @@ $(document).ready(function () {
     $(this).addClass('active');
 
     if (linkType === 'all') {
-      $('.catalog-portfolio-item').show();
+      $('.portfolio-item').show();
       return;
     }
 
-    $('.catalog-portfolio-item').each(function () {
+    $('.portfolio-item').each(function () {
       let portfolioType = $(this).data('type');
 
       if (linkType === portfolioType) {
@@ -67,8 +67,7 @@ $(document).ready(function () {
 
   //slider
   $('.review-list').slick({
-    // prevArrow: $('.arrow-left'),
-    // nextArrow: $('.arrow-right')
+
   });
 
 
