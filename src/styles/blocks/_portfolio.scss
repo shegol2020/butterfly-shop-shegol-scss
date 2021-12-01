@@ -15,13 +15,16 @@
   @media (max-width: $df-mobile) {
     padding-top: $indent-gap-mob;
     padding-bottom: 60px;
-    @include title-h2-mob;
   }
 }
 
 .portfolio-list{
   display: flex;
   flex-wrap: wrap;
+
+  @media (max-width: $df-mobile) {
+   flex-direction: column;
+  }
 }
 
 .portfolio-item {

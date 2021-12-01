@@ -9,13 +9,11 @@
   font-size: 64px;
   line-height: 87px;
   text-align: center;
+
+  @media (max-width: $df-mobile) {
+    font-size: 36px;
+    line-height: 49px;
+  }
 }
 
-@mixin title-h2-mob {
-  margin: 0;
-  font-size: 36px;
-  font-weight: 400;
-  line-height: 49px;
-  text-align: center;
-}
 
