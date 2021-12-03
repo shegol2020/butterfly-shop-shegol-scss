@@ -1,6 +1,11 @@
 .contacts{
  padding-top: 220px;
  padding-bottom: 130px;
+
+ @media (max-width: $df-mobile) {
+  padding-top: 90px;
+ padding-bottom: 90px;
+}
 }
 
 .contacts-inner {
@@ -15,9 +20,18 @@
   display: flex;
   justify-content: center;
   margin-top: 77px;
-
   list-style: none;
 
+  @media (max-width: $df-mobile) {
+    flex-direction: column;
+    align-items: center;
+    margin-top: 27px;
+  }
+
+}
+
+.contacts-list-item{
+  padding: 15px;
 }
 
 .contacts-list-link{
@@ -34,6 +48,13 @@
   &:hover {
     color: $color-add;
   }
+
+  @media (max-width: $df-mobile) {
+    margin-right: 0;
+    font-size: 18px;
+    line-height: 24px;
+  }
+
 }
 
 .contact-info{
@@ -41,6 +62,11 @@
 
    &.active{
     display: flex;
+  }
+
+  @media (max-width: $df-mobile) {
+    flex-direction: column;
+    align-items: center;
   }
 }
 
@@ -50,12 +76,43 @@
   width: 41.66%;
   font-size: 24px;
   line-height: 33px;
+
+  @media (max-width: $df-mobile) {
+    padding-top: 20px;
+    padding-left: 0;
+    width: 100%;
+    text-align: center;
+    font-size: 16px;
+    line-height: 22px;
+  }
 }
 
 .contact-info-map{
   width: 58.33%;
   padding-top: 40px;
+
+  @media (max-width: $df-mobile) {
+    width: 100%;
+    max-width: 300px;
+  }
 }
+
+.small{
+  display: none;
+
+  @media (max-width: $df-mobile) {
+    display: block;
+  }
+}
+
+.big{
+  display: block;
+
+  @media (max-width: $df-mobile) {
+    display: none;
+  }
+}
+
 
 
 
