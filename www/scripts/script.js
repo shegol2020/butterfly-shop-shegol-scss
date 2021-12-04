@@ -84,4 +84,14 @@ $(document).ready(function () {
     $('.review-list').slick();
   }
 
+
+  //form alert
+  $('.form-btn').on('click', function (e) {
+    e.preventDefault();
+    let inputText = document.getElementById("name").value;
+    alert(`Спасибо, ${inputText}! Совсем скоро мы свяжемся с вами.`);
+  });
+
 });
+
+
