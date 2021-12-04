@@ -45,6 +45,20 @@ $(document).ready(function () {
     });
   });
 
+  $('.filter-other').on('click', function (e) {
+    e.preventDefault();
+    $('.filter-show').show();
+    $(this).hide();
+  });
+
+  $('.filter-all').on('click', function (e) {
+    e.preventDefault();
+    $('.filter-other').show();
+    $('.filter-show').hide();
+  });
+
+
+
   // Аккордеон
   let prevIndex;
 
@@ -66,9 +80,8 @@ $(document).ready(function () {
 
 
   //slider
-  $('.review-list').slick({
-
-  });
-
+  if ($('.review-list').length) {
+    $('.review-list').slick();
+  }
 
 });

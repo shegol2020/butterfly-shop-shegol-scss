@@ -1,6 +1,10 @@
 .portfolio {
   padding: 130px 0;
   text-align: center;
+
+  @media (max-width: $df-mobile) {
+    padding: 0;
+  }
 }
 
 .portfolio-inner{
@@ -12,8 +16,8 @@
   @include title-h2;
 
   @media (max-width: $df-mobile) {
-    padding-top: $indent-gap-mob;
-    padding-bottom: 60px;
+    padding-top: 100px;
+    padding-bottom: 40px;
   }
 }
 
@@ -23,11 +27,18 @@
 
   @media (max-width: $df-mobile) {
    flex-direction: column;
+   flex-wrap: nowrap;
+   max-width: 300px;
+   margin: 0 auto;
   }
 }
 
 .portfolio-item {
   flex-basis: 25%;
+
+  @media (max-width: $df-mobile) {
+    margin: 10px 0;
+   }
 }
 
 .portfolio-item-wrap {
@@ -39,6 +50,10 @@
     width: 100%;
     display: block;
   }
+
+  @media (max-width: $df-mobile) {
+    margin: 0;
+   }
 }
 
 .portfolio-item-text{
@@ -72,10 +87,21 @@
   display: flex;
   justify-content: center;
   padding-bottom: 30px;
+
+  @media (max-width: $df-mobile) {
+    flex-direction: column;
+   }
 }
 
 .filter-item{
   margin-left: 50px;
+
+  @media (max-width: $df-mobile) {
+    margin-left: 0px;
+    padding: 15px;
+    font-size: 18px;
+    line-height: 24px;
+  }
 }
 
 .filter-link{
@@ -89,4 +115,8 @@
   &.active{
     color: $color-add;
   }
+}
+
+.filter-show{
+  display: none;
 }
