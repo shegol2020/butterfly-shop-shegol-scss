@@ -108,6 +108,15 @@ $(document).ready(function () {
     $('.order-popup').hide();
   });
 
+  //catalog more button
+
+  $('.more-btn').on('click', function () {
+    $('.portfolio-bonus').show();
+    $('.more-btn').hide();
+  });
+
+
+
 
 });
 

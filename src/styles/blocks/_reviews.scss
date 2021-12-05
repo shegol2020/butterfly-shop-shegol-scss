@@ -60,14 +60,17 @@
 
 .review-content {
   flex-grow: 1;
+  padding-left: 22px;
 
   @media (max-width: $df-mobile) {
+    padding-left: 0;
     width: 192px;
     text-align: center;
   }
 }
 
 .review-name {
+  padding-bottom: 40px;
   font-size: 48px;
   line-height: 65px;
 
@@ -79,11 +82,12 @@
 }
 
 .review-quote {
-  margin: 10px 0 0 0;
+  margin: 40px 0 0 0;
   font-size: 24px;
   line-height: 33px;
 
   @media (max-width: $df-mobile) {
+    margin: 10px 0 0 0;
     font-size: 16px;
     line-height: 22px;
   }
