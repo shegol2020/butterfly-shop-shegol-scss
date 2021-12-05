@@ -88,9 +88,26 @@ $(document).ready(function () {
   //form alert
   $('.form-btn').on('click', function (e) {
     e.preventDefault();
-    let inputText = document.getElementById("name").value;
-    alert(`Спасибо, ${inputText}! Совсем скоро мы свяжемся с вами.`);
+    let orderName = document.getElementById("name").value;
+    let orderPhone = document.getElementById("phone").value;
+
+    if (!orderPhone || orderPhone.length !== 12) {
+      $('.order-popup-text').html(`Пожалуйста, введите номер в формате +71234567890, наш программист пока учится`);
+      $('.order-popup').show();
+    } else if (orderName && orderName.length < 50) {
+      $('.order-popup-text').html(`Спасибо за заявку, <br> ${orderName}. <br> Ожидайте звонка!`);
+      $('.order-popup').show();
+    } else {
+      $('.order-popup-text').html(`Спасибо за заявку. <br> Ожидайте звонка!`);
+      $('.order-popup').show();
+    }
   });
+
+  $('.popup-btn').on('click', function (e) {
+    e.preventDefault();
+    $('.order-popup').hide();
+  });
+
 
 });
 
